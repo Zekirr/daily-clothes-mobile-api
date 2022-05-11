@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vetements",
+  "info": {
+    "singularName": "vetement",
+    "pluralName": "vetements",
+    "displayName": "Vetement",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Leger",
+        "Moyen",
+        "Epais"
+      ]
+    },
+    "Impermeable": {
+      "type": "boolean"
+    },
+    "couleur": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::couleur.couleur"
+    }
+  }
+}

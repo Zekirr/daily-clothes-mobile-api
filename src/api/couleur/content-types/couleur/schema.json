@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "couleurs",
+  "info": {
+    "singularName": "couleur",
+    "pluralName": "couleurs",
+    "displayName": "Couleur",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Icone": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Nom": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "regex": "\\w+"
+    }
+  }
+}
