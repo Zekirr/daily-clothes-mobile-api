@@ -15,14 +15,6 @@
     "Nom": {
       "type": "string"
     },
-    "Matiere": {
-      "type": "enumeration",
-      "enum": [
-        "Leger",
-        "Moyen",
-        "Epais"
-      ]
-    },
     "Impermeable": {
       "type": "boolean"
     },
@@ -38,6 +30,11 @@
         "Normal",
         "Ample"
       ]
+    },
+    "customer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::customer.customer"
     }
   }
 }
