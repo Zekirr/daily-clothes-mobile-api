@@ -15,7 +15,7 @@
     "Nom": {
       "type": "string"
     },
-    "Epaisseur": {
+    "Matiere": {
       "type": "enumeration",
       "enum": [
         "Leger",
@@ -30,17 +30,6 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::couleur.couleur"
-    },
-    "Type": {
-      "type": "enumeration",
-      "enum": [
-        "Chaussures",
-        "Bas",
-        "T-shirt",
-        "Par dessus",
-        "Manteau",
-        "Couvre-chef"
-      ]
     },
     "Taille": {
       "type": "enumeration",
