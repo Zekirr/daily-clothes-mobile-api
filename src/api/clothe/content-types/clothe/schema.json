@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clothes",
+  "info": {
+    "singularName": "clothe",
+    "pluralName": "clothes",
+    "displayName": "Clothe",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "waterproof": {
+      "type": "boolean",
+      "required": true
+    },
+    "color": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::color.color"
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "slim",
+        "normal",
+        "large"
+      ],
+      "required": true
+    },
+    "customer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::customer.customer"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    }
+  }
+}

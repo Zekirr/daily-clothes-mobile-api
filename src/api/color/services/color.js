@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * vetement service.
+ * color service.
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::vetement.vetement');
+module.exports = createCoreService('api::color.color');

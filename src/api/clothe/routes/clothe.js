@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * couleur router.
+ * clothe router.
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::couleur.couleur');
+module.exports = createCoreRouter('api::clothe.clothe');
