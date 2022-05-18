@@ -4,22 +4,19 @@
   "info": {
     "singularName": "color",
     "pluralName": "colors",
-    "displayName": "Color"
+    "displayName": "Color",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "icon": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false,
+    "colorname": {
+      "type": "string",
       "required": true
     },
-    "colorname": {
+    "hexadecimal": {
       "type": "string",
       "required": true
     }

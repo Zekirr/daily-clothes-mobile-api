@@ -4,7 +4,8 @@
   "info": {
     "singularName": "category",
     "pluralName": "categories",
-    "displayName": "Category"
+    "displayName": "Category",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -15,6 +16,7 @@
       "type": "enumeration",
       "enum": [
         "hat",
+        "jacket",
         "top",
         "bottom",
         "shoes"
