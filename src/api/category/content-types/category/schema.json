@@ -12,20 +12,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "hat",
-        "jacket",
-        "top",
-        "bottom",
-        "shoes"
-      ],
-      "required": true
-    },
     "element": {
       "type": "string",
       "required": true
+    },
+    "type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::type.type"
     }
   }
 }
